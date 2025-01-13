@@ -8,7 +8,7 @@
 全栈项目感谢我的好朋友刘桑提供的灵感，不是刘桑我估计这辈子也接触不到全栈
 
 ### 架构
-- 后端部分由python实现，主要实现的内容是：储数据和获得数据，esp8266经由一个endpoint发送时间戳和温湿度，后端需要有两个队列，一个负责存储近24h的温湿度，剩下的一个负责存储当天的最高最低温度，最高最低湿度，以及平均温湿度
+- 后端部分由python实现，主要实现的内容是：储数据和获得数据，esp8266经由一个endpoint发送时间戳和温湿度，后端需要有两个队列，一个负责存储近24h的温湿度，剩下的一个负责存储当天的最高最低温度，最高最低湿度，以及平均温湿度（平均温度的计算有ewma机制实现动态更新）
 - 前端部分由JavaScript实现，主要实现内容是展出图标和当前温湿度，主要用到antdesign来实现按钮，用antdesign chart实现折线图 按钮代码url 为 https://ant.design/components/button 折线图代码url为 https://ant-design-charts.antgroup.com/manual/getting-started
 
 ### 部署
